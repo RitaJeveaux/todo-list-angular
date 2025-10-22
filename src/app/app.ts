@@ -23,4 +23,9 @@ export class App implements OnInit {
     this.taskService.addTask(title);
     this.tasks = this.taskService.getTasks();
   }
+
+  onTaskToggled(taskId: number) {
+    this.taskService.toogleTaskDone(taskId);
+    this.tasks = this.taskService.getTasks();
+  }
 }
