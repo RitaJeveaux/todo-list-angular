@@ -1,59 +1,61 @@
-# TodoListAngular
+# Projeto Angular - Curso Ada Tech
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
+Este projeto foi desenvolvido como parte das atividades do curso de Angular da Ada Tech. O objetivo é aplicar os conceitos aprendidos em aula para construir uma aplicação web moderna e reativa utilizando o framework Angular.
 
-## Development server
+## 📝 Sobre a Aplicação
 
-To start a local development server, run:
+A aplicação é uma lista de tarefas (To-Do List) simples, onde o usuário pode adicionar, visualizar e marcar a tarefa como concluida. 
 
+## 🚀 Tecnologias Utilizadas
+
+A aplicação foi construída com as seguintes tecnologias:
+
+- **Angular**: Um framework de desenvolvimento de aplicações web baseado em TypeScript.
+- **TypeScript**: Um superconjunto de JavaScript que adiciona tipagem estática opcional.
+- **HTML5 & SCSS**: Para estruturação e estilização das páginas.
+- **Node.js**: Ambiente de execução para o JavaScript no lado do servidor.
+- **NPM**: Gerenciador de pacotes do Node.js, utilizado para instalar as dependências do projeto.
+
+## 📦 Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+- [Node.js](https://nodejs.org/en/)
+- [Angular CLI](https://angular.io/cli)
+
+### Versão do Node.js
+
+Para garantir a compatibilidade, é recomendável utilizar uma versão **LTS (Long Term Support)** do Node.js. As versões **v18.x** ou **v20.x** são as mais indicadas para projetos Angular recentes.
+
+Você pode verificar sua versão do Node com o comando:
 ```bash
-ng serve
+node -v
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## ⚙️ Como Executar o Projeto
 
-## Code scaffolding
+Siga os passos abaixo para executar a aplicação em seu ambiente local:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1.  **Clone o repositório**
+    ```bash
+    git clone <URL_DO_SEU_REPOSITORIO>
+    ```
 
-```bash
-ng generate component component-name
-```
+2.  **Acesse a pasta do projeto**
+    ```bash
+    cd <NOME_DA_PASTA_DO_PROJETO>
+    ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+3.  **Instale as dependências**
+    ```bash
+    npm install
+    ```
 
-```bash
-ng generate --help
-```
+4.  **Inicie o servidor de desenvolvimento**
+    ```bash
+    ng serve
+    ```
+    A aplicação estará disponível em `http://localhost:4200/`. O servidor recarregará automaticamente a página se você alterar qualquer um dos arquivos de origem.
 
-## Building
+---
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<p align="center"> © 2025 - Rita Jeveaux</p>
