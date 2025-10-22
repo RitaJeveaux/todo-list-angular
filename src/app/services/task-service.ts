@@ -12,6 +12,7 @@ export class TaskService {
   private tasks: ITask[] = [
     { id: 1, title: 'Estudar Angular', done: true },
     { id: 2, title: 'Fazer as atividades de aula', done: false },
+    { id: 3, title: 'Tomar café', done: false },
   ]
 
   constructor() { }

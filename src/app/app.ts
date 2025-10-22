@@ -1,12 +1,26 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { TaskForm } from './components/task-form/task-form';
+import { TaskList } from './components/task-list/task-list';
+import { ITask, TaskService } from './services/task-service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [TaskForm, TaskList],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('todo-list-angular');
+export class App implements OnInit {
+  title = 'todo-list-app';
+  tasks: ITask[] = [];
+
+  constructor(private taskService: TaskService) { }
+
+  ngOnInit(): void {
+    this.tasks = this.taskService.getTasks();
+  }
+
+  onTaskAdded(title: string) {
+    this.taskService.addTask(title);
+    this.tasks = this.taskService.getTasks();
+  }
 }
