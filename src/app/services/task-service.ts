@@ -25,4 +25,12 @@ export class TaskService {
     const newId = this.tasks.length > 0 ? Math.max(...this.tasks.map(task => task.id)) + 1 : 1;
     this.tasks.push({ id: newId, title, done: false });
   }
+  
+  toogleTaskDone(id: number) {
+    const task = this.tasks.find(task => task.id == id);
+    if (task) {
+      task.done = !task.done;// operação de inversão de boleano
+    }
+  }
+
 }
